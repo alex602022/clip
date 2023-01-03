@@ -6,7 +6,6 @@ taxonomies:
   tags: []
 extra:
   source: https://bewaters.me/limxtop/2021/08/18/English-introduction/
-  hostname: bewaters.me
   author: Post author: 文理兼修电脑首席 @若批评不自由，则赞美无意义
   original_title: "Yume Shoka = 若批评不自由，则赞美无意义 = 程序员 & 文艺青年的后花园"
   original_lang: en
