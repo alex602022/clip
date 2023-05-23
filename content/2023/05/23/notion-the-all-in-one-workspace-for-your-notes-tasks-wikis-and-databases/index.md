@@ -12,60 +12,59 @@ extra:
   original_lang: und
 ---
 
-We are looking for our first engineer fully dedicated to helping grow Readwise.
+## What you'll do
 
-Build (and fully own) our tracking, analytics, and experimentation infrastructure and tools across our web, iOS, and Android apps for [Readwise Reader](http://readwise.io/read) as well as architecting and building our data tech stack (ie data warehouse, business intelligence, dashboards).
+- We are looking for our first engineer fully dedicated to helping grow Readwise.
 
-Work with product leaders to analyze user data and metrics to identify patterns, trends, and insights that can be leveraged to improve growth. Utilize A/B testing, cohort analysis, and other statistical methods to measure and validate the impact of growth experiments.
+- Build (and fully own) our tracking, analytics, and experimentation infrastructure and tools across our web, iOS, and Android apps for [Readwise Reader](http://readwise.io/read) as well as architecting and building our data tech stack (ie data warehouse, business intelligence, dashboards).
 
-Help manage our integrations with other apps. We have 30+ integrations and growing — you’ll work with other engineers on our team to prioritize and maintain these integrations to keep our users connected and happy.
+- Work with product leaders to analyze user data and metrics to identify patterns, trends, and insights that can be leveraged to improve growth. Utilize A/B testing, cohort analysis, and other statistical methods to measure and validate the impact of growth experiments.
 
-Our developers operate with extreme autonomy: you’ll own new features, abstractions, infrastructure all the way from planning to building to shipping.
+- Help manage our integrations with other apps. We have 30+ integrations and growing — you’ll work with other engineers on our team to prioritize and maintain these integrations to keep our users connected and happy.
 
-Senior-level engineer — You’re comfortable shipping features from beginning to end with minimal guidance or oversight and have done so in multiple teams/contexts. You can work effectively across the stack from top to bottom. You’re equally as comfortable shipping user-facing experiences as you are writing custom queries to analyze experiment results.
+- Our developers operate with extreme autonomy: you’ll own new features, abstractions, infrastructure all the way from planning to building to shipping.
 
-Passionate about growth — You’re excited and motivated by driving more people to use and stay using Readwise. You’re into finding innovative ways to drive user acquisition, retention, and revenue. You know that growth features are significantly higher risk/reward that core product features and you’re down to treat “failed” iterations as rapid learning. You want to win.
+## Who you are
 
-Attention to detail — Measuring and improving growth is often about the details. You should be thorough and excited to get things set up “right”.
+- **Senior-level engineer** — You’re comfortable shipping features from beginning to end with minimal guidance or oversight and have done so in multiple teams/contexts. You can work effectively across the stack from top to bottom. You’re equally as comfortable shipping user-facing experiences as you are writing custom queries to analyze experiment results.
 
-Nonfiction reader & self-learner — Everyone on our team is genuinely passionate about [what we’re working on](https://blog.readwise.io/readwise-reading-app/) and we hope you are too ;)
+- Passionate about growth — You’re excited and motivated by driving more people to use and stay using Readwise. You’re into finding innovative ways to drive user acquisition, retention, and revenue. You know that growth features are significantly higher risk/reward that core product features and you’re down to treat “failed” iterations as rapid learning. You want to win.
 
-Humble — Nothing is beneath you. If pixels need to be debugged for a few days, so be it.
+- **Attention to detail** — Measuring and improving growth is often about the details. You should be thorough and excited to get things set up “right”.
 
-Experience working on a large-scale, complex apps.
+- Nonfiction reader & self-learner — Everyone on our team is genuinely passionate about [what we’re working on](https://blog.readwise.io/readwise-reading-app/) and we hope you are too ;)
 
-Experience working with modern data tech stack tools such as data integration ELs (eg Segment, Fivetran), data warehouses (eg Snowflake, BigQuery), and business intelligence tools (eg Metabase, Canvas).
+- **Humble** — Nothing is beneath you. If pixels need to be debugged for a few days, so be it.
 
-Our backend is Python, Django, Redis, Postgres hosted on Heroku/DigitalOcean — if you’re familiar with this stack and can hack on our (smallish) backend, that’s great!
+## Nice to have
 
-Although certainly not required, we love seeing code or live demos!
+- Experience working on a large-scale, complex apps.
 
-Readwise is a product which aims to help people learn and better themselves — we're not here to optimize ads or screen time.
+- Experience working with modern data tech stack tools such as data integration ELs (eg Segment, Fivetran), data warehouses (eg Snowflake, BigQuery), and business intelligence tools (eg Metabase, Canvas).
 
-We are here to innovate entirely new ways of reading, writing, remembering, and improving.
+- Our backend is Python, Django, Redis, Postgres hosted on Heroku/DigitalOcean — if you’re familiar with this stack and can hack on our (smallish) backend, that’s great!
 
-Readwise is a product which aims to help people learn and better themselves — we're not here to optimize ads or screen time.
+- Although certainly not required, we love seeing code or live demos!
 
-We are here to innovate entirely new ways of reading, writing, remembering, and improving.
+## Company
 
-We're a fast-growing startup with so many problems to solve and so little time.
+- We're a fast-growing startup with so many problems to solve and so little time.
+- We're self-funded (aka bootstrapped), sustainable, and profitable.
+- Our existing niche product positions us to go after a massive adjacent market.
 
-We're self-funded (aka bootstrapped), sustainable, and profitable.
+## Autonomy
 
-Our existing niche product positions us to go after a massive adjacent market.
+- We are still a small team of 14 (including 6 engineers) requiring ownership and self-direction.
+- We are distributed to the core: max 1.5 meetings a week with no bureaucracy or time-wasting.
+- You will own the features and projects you take on — from shaping to shipping.
+- Did we mention we ship, ship, and ship?
 
-We are still a small team of 14 (including 6 engineers) requiring ownership and self-direction.
+## Benefits
 
-We are distributed to the core: max 1.5 meetings a week with no bureaucracy or time-wasting.
+- Competitive salary & equity
 
-You will own the features and projects you take on — from shaping to shipping.
+- Freedom to work from anywhere with a remote-first, mostly async organization
 
-Did we mention we ship, ship, and ship?
+- Biannual ad hoc get-togethers for smaller teams
 
-Competitive salary & equity
-
-Freedom to work from anywhere with a remote-first, mostly async organization
-
-Biannual ad hoc get-togethers for smaller teams
-
-The autonomy and fun of working at a no-nonsense, nimble startup
+- The autonomy and fun of working at a no-nonsense, nimble startup
