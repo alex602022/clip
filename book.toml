@@ -9,6 +9,8 @@ authors = ["Alex"]
 [output.html]
 git-repository-url = "https://github.com/theowenyoung/clip-template"
 edit-url-template = "https://github.com/theowenyoung/clip-template/edit/main/{path}"
+additional-css = ["content/theme/sidebar.css"]
+additional-js = ["content/theme/sidebar.js"]
 
 [output.html.search]
 enable = false

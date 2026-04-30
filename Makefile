@@ -46,3 +46,9 @@ day:
 serveday:
 	./bin/deno run --no-lock -A ./cli.ts --serve --day=$(day)
 
+.Phony: clip
+clip:
+	git add content/
+	git commit -m "clip: $(shell date +'%Y-%m-%d')"
+	git push
+
