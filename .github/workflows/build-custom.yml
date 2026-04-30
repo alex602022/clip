@@ -17,11 +17,11 @@ jobs:
     concurrency: build-daily-book
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: denoland/setup-deno@v1
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
         with:
           deno-version: v1.x
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.deno
@@ -37,7 +37,7 @@ jobs:
           MJ_APIKEY_PRIVATE: ${{ secrets.MJ_APIKEY_PRIVATE }}
       - name: make release if build success
         if: steps.build.outcome == 'success' && github.event.inputs.tag != ''
-        uses: "softprops/action-gh-release@v1"
+        uses: "softprops/action-gh-release@v2"
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
