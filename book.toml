@@ -14,17 +14,3 @@ additional-js = ["content/theme/sidebar.js"]
 
 [output.html.search]
 enable = false
-
-[output.markdown]
-enable = true
-
-[mail]
-# false will diasble mail sending
-enable = false
-from_email = "bot@owenyoung.com"
-from_name = "Owen"
-# you can set the mailjet contact list id here
-# mailjet_contact_list_id = "17669"
-# or directly set the to_email, seperated by comma
-# or your can also set the environment variable TO_EMAIL
-to_email = ""
