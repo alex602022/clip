@@ -12,7 +12,7 @@
   } catch (e) {}
 
   function current() {
-    return Math.round(parseFloat(getComputedStyle(root).fontSize)) || 18;
+    return Math.round(parseFloat(getComputedStyle(document.body).fontSize)) || 18;
   }
 
   function change(delta) {

@@ -27,11 +27,9 @@ select,
   font-family: var(--clip-font-family) !important;
 }
 
-html {
-  font-size: var(--clip-font-size);
-}
-
+/* mdBook sets html{font-size:62.5%} (1rem = 10px), so size the body, not html */
 body {
+  font-size: var(--clip-font-size);
   font-weight: var(--clip-font-weight);
   line-height: var(--clip-line-height);
   letter-spacing: var(--clip-letter-spacing);
@@ -128,6 +126,8 @@ pre,
     --clip-line-height: 1.85;
     --clip-letter-spacing: 0.01em;
     --clip-paragraph-gap: 0.7em;
+    --page-padding: 0px; /* mdBook's menu bar bleeds by this amount; main supplies its own gutters */
+    --sidebar-width: min(86vw, 340px); /* mdBook's own variable, keeps hide/show offsets consistent */
   }
 
   html {
@@ -137,7 +137,6 @@ pre,
   }
 
   /* Full-width column with comfortable gutters + notch safe areas */
-  .page { padding: 0; }
   .content { padding: 0; overflow-x: hidden; }
   .content main {
     max-width: none;
@@ -172,7 +171,6 @@ pre,
   .menu-title { font-size: 0.8em; }
 
   /* Sidebar drawer: wide enough to read titles, big tap targets */
-  .sidebar { width: min(86vw, 340px); }
   .sidebar-scrollbox { height: 100dvh; padding-bottom: env(safe-area-inset-bottom); }
   .clip-search-input { font-size: 16px; padding: 10px 12px; }
   ol.chapter > li.chapter-item > a,
@@ -210,7 +208,7 @@ pre,
     height: 44px;
     border-radius: 22px;
     font-size: 17px;
-    opacity: 0.9;
+    opacity: 1;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
   }
   .clip-fontsize.clip-hidden {
