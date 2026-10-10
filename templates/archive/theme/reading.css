@@ -118,6 +118,104 @@ pre,
 .clip-fontsize sup,
 .clip-fontsize sub { font-size: 0.6em; }
 
-@media (max-width: 600px) {
-  .content p { text-align: left; }
+/* ══ Mobile (designed for one-handed reading on a phone) ══
+   Principles: the text is the interface, so give it the full width and hide
+   chrome while reading; every tap target is >= 44px; controls sit in the
+   thumb zone; inputs are >= 16px so iOS never zooms; respect notches. */
+@media (max-width: 700px) {
+  :root {
+    --clip-font-size: 18px;
+    --clip-line-height: 1.85;
+    --clip-letter-spacing: 0.01em;
+    --clip-paragraph-gap: 0.7em;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Full-width column with comfortable gutters + notch safe areas */
+  .page { padding: 0; }
+  .content { padding: 0; overflow-x: hidden; }
+  .content main {
+    max-width: none;
+    padding: 4px max(18px, env(safe-area-inset-right)) 96px
+      max(18px, env(safe-area-inset-left));
+  }
+
+  /* Left-aligned avoids ugly gaps on narrow lines of mixed CJK/Latin */
+  .content p { text-align: left; text-indent: var(--clip-text-indent); }
+  .content h1 { font-size: 1.45em; line-height: 1.4; margin: 0.8em 0 0.6em; }
+  .content h2 { font-size: 1.25em; line-height: 1.45; }
+  .content h3 { font-size: 1.1em; line-height: 1.5; }
+
+  /* Never let content force horizontal scrolling */
+  .content img,
+  .content video,
+  .content iframe { max-width: 100%; height: auto; }
+  .content table { display: block; overflow-x: auto; max-width: 100%; }
+  .content pre { overflow-x: auto; max-width: 100%; }
+  .content a,
+  .content p,
+  .content li { overflow-wrap: anywhere; word-break: break-word; }
+  .content blockquote { margin-left: 0; margin-right: 0; }
+
+  /* Top bar: slim, and slides away while scrolling down to read */
+  #menu-bar {
+    padding-top: env(safe-area-inset-top);
+    transition: transform 0.2s ease;
+  }
+  #menu-bar.clip-hidden { transform: translateY(-100%); }
+  #menu-bar .icon-button { min-width: 44px; min-height: 44px; }
+  .menu-title { font-size: 0.8em; }
+
+  /* Sidebar drawer: wide enough to read titles, big tap targets */
+  .sidebar { width: min(86vw, 340px); }
+  .sidebar-scrollbox { height: 100dvh; padding-bottom: env(safe-area-inset-bottom); }
+  .clip-search-input { font-size: 16px; padding: 10px 12px; }
+  ol.chapter > li.chapter-item > a,
+  ol.section li.chapter-item > a {
+    font-size: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+  .clip-toggle { width: 44px; font-size: 12px; }
+  li.clip-year-group { padding: 14px 12px 6px; font-size: 12px; }
+  .clip-actions { font-size: 13px; padding: 6px 12px; gap: 16px; }
+  .clip-action-btn { padding: 6px 0; }
+
+  /* Prev / next chapter: big thumb-friendly bars at the end of the article */
+  .nav-wrapper { margin-top: 24px; }
+  .mobile-nav-chapters {
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+
+  /* Font-size buttons: 44px targets in the bottom-right thumb zone */
+  .clip-fontsize {
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    gap: 10px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .clip-fontsize button {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    font-size: 17px;
+    opacity: 0.9;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  }
+  .clip-fontsize.clip-hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    pointer-events: none;
+  }
 }
